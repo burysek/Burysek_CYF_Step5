@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CYF assignment</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="header">
+    <h1 id="cybersecurity-blog-title">Cybersecurity <em>risks</em> of vibe coding</h1>
+  </div>
+  <h2 id="blog-subtitle">How can chatbots ruin your work, your business, your life...</h2>
+  <img src="https://dashboard.thefinanser.com/wp-content/uploads/2025/05/Coders.png" alt="theme-picture-ai-coding" id="title-image">
+  <p>We all know the hype around vibe coding, i.e., the use of generative AI to develop code. It became so popular that entire textbooks have been written about it and some job posts even list it as required experience.<br>But using these AI agents for coding can pose a <strong>significant risk</strong> for your business! ...or at least in this short dummy article, I'll try to convince you that they do.</p>
+    <h4>Here is why using vibe coding might pose a cybersecurity risk for you:</h4>
+  <ul>
+    <li>It might leak data</li>
+    <li>It makes developers skip input validation</li>
+    <li>Hackers create malicious libraries to take advantage of vibe coding</li>
+  </ul>
+  <p>Let's break each of these down:</p>
+  
+  <h3>Data Leakage</h3>
+  <img src="https://www.lepide.com/blog/wp-content/uploads/2021/04/what-is-data-leakage.jpg" alt="data-leak-theme-picture" class="subheading-img">
+  <p>Developers often work with sensitive information. This includes: database credentials, API keys, passwords, user tokens, personal information and much more.<br>While at the time of deployment, these are hidden away (unless something went horribly wrong), most developers use chatbots at the time of development. And more often than people are willing to admit, secure coding practices like hiding api keys and passwords in environment variables are thought of too late. This means that when LLMs are fine-tuned on users' data or when small companies fine-tune their own models, this sensitive information might be leaked to other users.</p>
+  <h3>Lack of input validation</h3>
+  <img src="https://dataintegrationinfo.com/wp-content/uploads/2020/06/MicrosoftTeams-image-1-e1592908726698.png" alt="data-validation-theme-picture" class="subheading-img">
+  <p>Vibe coding is... productive? Well, at least it speeds up code production. Significantly. This means that many developers are now expected to produce code at similar speed, often at the expense of quality. As a result, developers cut corners and this can create an opportunity for malicious agents. This is especially the case with junior developers who might not recognise these cybersecurity risks and, frankly, often don't understand the code that they are trying to merge. In consequence, teams might deploy software containing <a href="https://www.okta.com/identity-101/arbitrary-code-execution/" target="_blank">remote code execution (RCE) vulnerability</a>, whereby a hacker can execute code via standard customer input - a coding equivalent of locking the door while leaving a basement window wide open.</p>
+  <h3>Slopsquatting attacks</h3>
+  <img src="https://res.cloudinary.com/jerrick/image/upload/c_scale,f_jpg,q_auto/67fe0320501fb4001d0fa62a.jpg" alt="slopsquatting-theme-picture" class="subheading-img">
+  <p>Besides leaving your system vulnerable to cybersecurity attacks, an irresponsible developer can even do all the work himself. Slopsquatting is a type of attack where hackers register packages with common typos or hallucinations from LLMs. Vibe coders then install these packages themselves into the system, thus introducing malicious code.</p>
+  
+  <h3>Scared enough? What now?</h3>
+  <p>Are you convinced that using gen AI for code development in your company might be problematic? <br> If so, we created a task-list for you to follow to reduce the risk generative AI is posing</p>
+  <ol>
+    <li>Inform your team about the cybersecurity risks of using AI</li>
+    <li>Dicourage reckless vibe coding</li>
+    <li>Mandate comprehensive code review</li>
+  </ol>
+  
+  <h3 id="disclaimer">Disclaimer</h3>
+  <p>In truth, I don't have much idea of what I am talking about here and I'm definitely not competent enough to be talking about these things. But recently, the risks of using generative AI for code development have been on my mind and should be talked a little more often, I think. Here are a few articles that I found interesting on the topic:</p>
+  <ul>
+    <li><a href="https://cacm.acm.org/news/nonsense-and-malicious-packages-llm-hallucinations-in-code-generation/" target="_blank">Nonsense and Malicious Packages</a> at Communications of the ACM</li>
+    <li><a href="https://www.databricks.com/blog/passing-security-vibe-check-dangers-vibe-coding">Passing the Security Vibe Check</a> at Databricks</li>
+    <li><a href="https://medium.com/@mathieu.veron_70170/do-this-llm-use-my-prompt-data-for-training-34cf6a841202">Do this LLMs use my prompt data for training</a> at Medium</li>
+  </ul>
+<!-- partial -->
+  
+</body>
+</html>
